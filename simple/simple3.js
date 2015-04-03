@@ -4,6 +4,6 @@ function multiplyByX(a) {
   return x * a;
 }
 
-function doubleX() {
-  x = x * 2;
+function increaseX() {
+  x = x + 1;
 }

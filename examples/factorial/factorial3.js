@@ -13,11 +13,3 @@ function cond(expr, then, otherwise) {
     return otherwise();
   }
 }
-
-/* We can expand using substitution
-
-factorial(4)
-cond(4 < 2, {return 1}, {return factorial(4 - 1) * 4})
-4 * factorial(4 - 1)
-
- */
