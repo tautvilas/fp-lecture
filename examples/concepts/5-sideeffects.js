@@ -1,6 +1,6 @@
 var y = 10;
 
-function triple(x) {
+function double(x) {
   y++;
-  return x * 3;
+  return x * 2;
 }

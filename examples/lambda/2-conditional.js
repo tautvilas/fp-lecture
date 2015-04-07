@@ -9,3 +9,9 @@ var False = function(x, y) {
 function cond(expr, then, otherwise) {
   return expr(then, otherwise);
 }
+
+/*
+ TRUE = λxy. x
+ FALSE = λxy. y
+ COND = λcxy. c x y
+ */
