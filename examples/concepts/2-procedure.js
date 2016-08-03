@@ -1,3 +1,3 @@
 function randomize(x) {
-  return x * Math.floor(Math.random() * 10);
+  return Math.random() * x;
 }

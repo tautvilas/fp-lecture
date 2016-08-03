@@ -1,6 +1,6 @@
 function factorial(n) {
   return cond(
-    eq(0, n),
+    n === 0,
     function() {return 1;},
     function() {return factorial(n - 1) * n}
   );
