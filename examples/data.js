@@ -15,10 +15,14 @@ for (var i = 0; i < rooms.length; i++) {
   }
 }
 
+rooms.filter(function(room) {return room.vacancy});
+
 var mappedRooms = [];
 for (var i = 0; i < rooms.length; i++) {
   mappedRooms.push(rooms[i].name);
 }
+
+rooms.map(function(room) {return room.name})
 
 var numVacancies = 0;
 for (var i = 0; i < rooms.length; i++) {
@@ -26,3 +30,5 @@ for (var i = 0; i < rooms.length; i++) {
     numVacancies++;
   }
 }
+
+rooms.reduce(function(acc, room) {return acc + (room.vacancy ? 1 : 0)}, 0)
